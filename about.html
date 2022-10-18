@@ -1,4 +1,4 @@
-<!DOCTYPE html><!--  Last Published: Tue Oct 18 2022 13:17:04 GMT+0000 (Coordinated Universal Time)  -->
+<!DOCTYPE html><!--  Last Published: Tue Oct 18 2022 14:56:58 GMT+0000 (Coordinated Universal Time)  -->
 <html data-wf-page="634c1ff805fc10cf398d6931" data-wf-site="628ea057b80598463f42e602" lang="en">
 <head>
   <meta charset="utf-8">
@@ -27,7 +27,20 @@ a {
 }
 </style>
 </head>
-<body>
+<body class="body-3">
+  <div class="w-embed">
+    <style>
+.full-menu {
+	height: calc(var(--vh, 1vh) * 100);
+}
+.preloader {
+	height: calc(var(--vh, 1vh) * 100);
+}
+.sec-about {
+	height: calc(var(--vh, 1vh) * 100);
+}
+</style>
+  </div>
   <div data-animation="default" data-collapse="none" data-duration="400" data-easing="ease" data-easing2="ease" role="banner" class="navbar w-nav">
     <nav role="navigation" class="nav-menu w-nav-menu">
       <a href="index.html" class="brand w-nav-brand">
@@ -65,7 +78,7 @@ a {
           <h1 class="logo nav-bottom">ZARIFI</h1>
         </div>
         <div class="nav-links-wrapper">
-          <a data-w-id="84f3f6a2-a2f7-d2dd-9fa6-1ad746813577" href="mailto:NICOLETTAZARIFI@YAHOO.COM?subject=Hello" class="link-block less-margin w-inline-block">
+          <a data-w-id="84f3f6a2-a2f7-d2dd-9fa6-1ad746813577" href="mailto:nicolettazarifi@yahoo.com?subject=Hello" class="link-block less-margin w-inline-block">
             <div class="link smaller">Mail</div>
             <div class="underline"></div>
           </a>
@@ -90,7 +103,7 @@ a {
           <div class="title">
             <h1 class="heading bold no-pad">CONTACT</h1>
           </div>
-          <a href="mailto:NICOLETTAZARIFI@YAHOO.COM?subject=Hello" class="link-block-2 w-inline-block">
+          <a href="mailto:nicolettazarifi@yahoo.com?subject=Hello" class="link-block-2 w-inline-block">
             <h1 class="heading bold _100 no-p">nicolettazarifi@yahoo.com<br></h1>
           </a>
           <a href="https://www.instagram.com/nicolettazarifi/" target="_blank" class="link-block-2 w-inline-block">
@@ -112,6 +125,18 @@ a {
   <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=628ea057b80598463f42e602" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
   <script src="js/nicolettazarifi.js" type="text/javascript"></script>
   <!-- [if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif] -->
+  <script>
+// First we get the viewport height and we multiple it by 1% to get a value for a vh unit
+let vh = window.innerHeight * 0.01;
+// Then we set the value in the --vh custom property to the root of the document
+document.documentElement.style.setProperty('--vh', `${vh}px`);
+// We listen to the resize event
+window.addEventListener('resize', () => {
+  // We execute the same script as before
+  let vh = window.innerHeight * 0.01;
+  document.documentElement.style.setProperty('--vh', `${vh}px`);
+});
+</script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/CustomEase.min.js"></script>
   <script>
