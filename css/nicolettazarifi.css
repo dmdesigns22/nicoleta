@@ -925,7 +925,7 @@ body {
   }
 
   .preloader {
-    display: flex;
+    display: none;
   }
 
   .heading-2 {
